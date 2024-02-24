@@ -20,11 +20,11 @@ const Test6 = () => {
     }
 
     const deleteTask = (id) => {
-        setTasks(tasks.filter( t => t.id!= id))
+        setTasks(tasks.filter( t => t.id!== id))
     }
 
     const updateTask = (id) => {
-        setTasks(tasks.map(t => t.id ==id ? {...t, complete:true} : t))
+        setTasks(tasks.map(t => t.id ===id ? {...t, complete:true} : t))
     }
 
   return (
